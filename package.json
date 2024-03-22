@@ -1,11 +1,15 @@
 {
-  "name": "portfolio",
+  "name": "astrolinkt",
   "type": "module",
   "version": "0.0.1",
   "license": "MIT",
   "author": {
-    "name": "AND3SIL4",
-    "url": "https://github.com/AND3SIL4"
+    "name": "flamrdevs",
+    "url": "https://github.com/flamrdevs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flamrdevs/astrolinkt.git"
   },
   "scripts": {
     "dev": "astro dev",
@@ -17,7 +21,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.9",
     "@klass/core": "4.0.0-next.25",
-    "@klass/react": "^4.0.0-next.25",
+    "@klass/react": "4.0.0-next.25",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-separator": "^1.0.3",
     "astro": "^4.5.2",

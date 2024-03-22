@@ -1,40 +1,35 @@
 ---
-import type { HTMLAttributes } from 'astro/types';
+import type { HTMLAttributes } from "astro/types";
 
-import '~/styles/global.ts';
+import "~/styles/globals.ts";
 
-type Props = HTMLAttributes<'html'> & {
+type Props = HTMLAttributes<"html"> & {
   title?: string;
   description?: string;
 };
 
-const {
-  title = 'porfolio felipe silva',
-  description = title,
-  ...html
-} = Astro.props;
+const { title = "astrolinkt", description = title, ...html } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark" {...html}>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <meta name="desciption" content={description} />
+    <meta name="description" content={description} />
 
-    <!-- Import fonts  -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <slot name="head" /></head
-  >
+
+    <slot name="head" />
+  </head>
   <body>
     <slot name="body" />
   </body>
