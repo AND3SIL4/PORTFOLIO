@@ -26,7 +26,10 @@ export default () => {
         creating user-centric software applications giving good digital
         experiences. With a focus on seamless, enjoyable and useful products, I
         aim to improve the general user experience and usage through strategic{" "}
-        <span className="font-bold">development solutions</span>.
+        <span className="font-bold text-secondary-9">
+          development solutions
+        </span>
+        .
       </div>
 
       {/* GitHub profile */}

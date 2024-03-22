@@ -1,15 +1,19 @@
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
 
-import coloradix, { slate, orange } from "@coloradix/tailwindcss";
+import coloradix, { slate, orange, blue, green } from "@coloradix/tailwindcss";
 
 const radix = coloradix({
   slate,
   orange,
+  blue,
+  green,
 })
   .alias({
     neutral: "slate",
     primary: "orange",
+    secondary: "blue",
+    tertiary: "green",
   })
   .build();
 

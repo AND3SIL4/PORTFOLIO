@@ -1,27 +1,9 @@
 import { IconButton } from "./ui";
 import { cn } from "./ui/utils.ts";
-import { Lucide } from "./icons";
+import { Simple, Lucide } from "./icons";
 
-const projects = [
-  {
-    title: "astrolinkt",
-    description: "Astro template",
-    icon: Lucide.IconImage,
-    url: "https://github.com/flamrdevs/astrolinkt",
-  },
-  {
-    title: "astrovehnt",
-    description: "Astro template",
-    icon: Lucide.IconImage,
-    url: "https://github.com/flamrdevs/astrovehnt",
-  },
-  {
-    title: "astrobuckt",
-    description: "Astro template",
-    icon: Lucide.IconImage,
-    url: "https://github.com/flamrdevs/astrobuckt",
-  },
-];
+// Import all projects done and in process..
+import { projects } from "./data/projects.data.ts";
 
 export default () => {
   return (
@@ -43,25 +25,54 @@ export default () => {
               <div className="flex flex-row items-stretch gap-5 pl-2">
                 <div className="flex items-center justify-center">
                   <project.icon
-                    size={24}
+                    size={50}
                     className="transition duration-300 group-hover:-translate-y-1 text-neutral-10 group-hover:text-neutral-11"
                   />
                 </div>
 
                 <div>
-                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">{project.title}</h3>
-                  <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-xs">
+                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">
+                    {project.title}
+                  </h3>
+                  <span className="text-sm opacity-50 text-neutral-10">
+                    {project.isDone ? "Done" : "In process..."}
+                  </span>
+                  <div className="transition duration-300 group-hover:translate-x-px text-pretty text-neutral-11 group-hover:text-neutral-11 text-sm">
                     {project.description}
                   </div>
                 </div>
               </div>
 
-              <IconButton as="a" role="button" href={project.url} className="group/icon" target="_blank" aria-label="Open">
-                <Lucide.IconExternalLink
+              <div className="m-2 flex flex-row gap-3">
+                <IconButton
+                  as="a"
+                  role="button"
+                  href={project.github}
+                  className="group/icon"
+                  target="_blank"
                   aria-label="Open"
-                  className="transition text-neutral-10 group-hover:text-primary-11 group-focus-visible/icon:text-primary-11"
-                />
-              </IconButton>
+                >
+                  <Simple.IconGitHub
+                    aria-label="Open"
+                    className="transition text-neutral-10 group-focus-visible/icon:text-primary-11"
+                  />
+                </IconButton>
+                {project.isDone && project.site ? (
+                  <IconButton
+                    as="a"
+                    role="button"
+                    href={project.github}
+                    className="group/icon"
+                    target="_blank"
+                    aria-label="Open"
+                  >
+                    <Lucide.IconExternalLink
+                      aria-label="Open"
+                      className="transition text-neutral-10 group-hover:text-primary-11 group-focus-visible/icon:text-primary-11"
+                    />
+                  </IconButton>
+                ) : null}
+              </div>
             </li>
           );
         })}
