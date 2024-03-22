@@ -21,7 +21,7 @@ export default () => {
       {/* About  */}
       <div>
         I am a{" "}
-        <span className="font-bold text-orange-500">software developer</span>{" "}
+        <span className="font-bold text-primary-11">software developer</span>{" "}
         from <span className="font-bold">Colombia</span>, specializing in
         creating user-centric software applications giving good digital
         experiences. With a focus on seamless, enjoyable and useful products, I
@@ -30,7 +30,7 @@ export default () => {
       </div>
 
       {/* GitHub profile */}
-      <div className="flex self-stretch justify-end animate-bounce">
+      <div className="flex self-stretch justify-end gap-3">
         <Button
           as="a"
           href="https://github.com/AND3SIL4"
