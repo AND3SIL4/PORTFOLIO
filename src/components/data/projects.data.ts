@@ -1,13 +1,5 @@
 import { Lucide } from "../icons";
-
-interface Projects {
-  title: string;
-  description: string;
-  icon: any;
-  site?: string;
-  github: string;
-  isDone: boolean;
-}
+import type { Project as Projects } from "./interfaces";
 
 export const projects: Projects[] = [
   {

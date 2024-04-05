@@ -1,15 +1,15 @@
 {
-  "name": "astrolinkt",
+  "name": "portfolio",
   "type": "module",
   "version": "0.0.1",
   "license": "MIT",
   "author": {
-    "name": "flamrdevs",
-    "url": "https://github.com/flamrdevs"
+    "name": "AND3SIL4",
+    "url": "https://github.com/AND3SIL4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/flamrdevs/astrolinkt.git"
+    "url": "https://github.com/AND3SIL4/PORTFOLIO.git"
   },
   "scripts": {
     "dev": "astro dev",

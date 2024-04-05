@@ -1,55 +1,47 @@
-import { IconButton } from "./ui";
+import React from "react";
 import { cn } from "./ui/utils.ts";
-import { Lucide, Simple } from "./icons";
 
-const stacks = [
-  {
-    name: "Figma",
-    category: "Design",
-    icon: Simple.IconFigma,
-    url: "https://www.figma.com",
-  },
-  {
-    name: "Framer",
-    category: "Design",
-    icon: Simple.IconFramer,
-    url: "https://www.framer.com",
-  },
-  {
-    name: "Rive",
-    category: "Design",
-    icon: Simple.IconRive,
-    url: "https://rive.app",
-  },
-  {
-    name: "Arc",
-    category: "Browser",
-    icon: Simple.IconArc,
-    url: "https://arc.net",
-  },
-  {
-    name: "Notion",
-    category: "Productivity",
-    icon: Simple.IconNotion,
-    url: "https://www.notion.so",
-  },
-  {
-    name: "Calendly",
-    category: "Calendar",
-    icon: Simple.IconCalendly,
-    url: "https://calendly.com",
-  },
-];
+//Import data to be render on screen
+import { stacks, frameworks, tools } from "./data/stack.data.ts";
+
+//Import interfaces
+import type { Props } from "./data/interfaces.ts";
 
 export default () => {
+  //Dictionary of information about technical skills
+  const skills: Props[] = [
+    {
+      title: "Stacks",
+      content: stacks,
+    },
+    {
+      title: "Frameworks",
+      content: frameworks,
+    },
+    {
+      title: "Tools",
+      content: tools,
+    },
+  ];
+
+  return (
+    <>
+      {skills.map((skill) => (
+        <BaseStack content={skill.content} title={skill.title} />
+      ))}
+    </>
+  );
+};
+
+const BaseStack: React.FC<Props> = ({ title, content }) => {
   return (
     <div>
-      <h2 className="font-medium text-xl mb-3">Stacks</h2>
+      <h2 className="font-medium text-xl mb-3">{title}</h2>
       <ul className="grid grid-cols-2 gap-3 p-1">
-        {stacks.map((stack) => {
+        {content.map((content: any) => {
           return (
             <li
-              key={stack.name}
+              key={content.name}
               className={cn(
                 "group",
                 "flex items-center justify-between px-4 py-3",
@@ -60,26 +52,21 @@ export default () => {
             >
               <div className="flex flex-row items-stretch gap-5 pl-2">
                 <div className="flex items-center justify-center">
-                  <stack.icon
+                  <content.icon
                     size={24}
                     className="transition duration-300 group-hover:-translate-y-1 text-neutral-10 group-hover:text-neutral-11"
                   />
                 </div>
 
                 <div>
-                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">{stack.name}</h3>
+                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">
+                    {content.name}
+                  </h3>
                   <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-xs">
-                    {stack.category}
+                    {content.category}
                   </div>
                 </div>
               </div>
-
-              <IconButton as="a" role="button" href={stack.url} className="group/icon" target="_blank" aria-label="Open">
-                <Lucide.IconExternalLink
-                  aria-label="Open"
-                  className="transition text-neutral-10 group-hover:text-primary-11 group-focus-visible/icon:text-primary-11"
-                />
-              </IconButton>
             </li>
           );
         })}
