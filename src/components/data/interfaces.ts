@@ -2,10 +2,10 @@
 export interface Project {
   title: string;
   description: string;
-  icon: any;
   site?: string;
   github: string;
   isDone: boolean;
+  img: string
 }
 
 //Stack interface

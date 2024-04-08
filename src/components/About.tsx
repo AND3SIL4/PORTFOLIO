@@ -37,7 +37,7 @@ export default () => {
       </div>
 
       {/* About  */}
-      <div>
+      <div className="text-lg">
         I am a{" "}
         <span className="font-bold text-primary-11">software developer</span>{" "}
         from <span className="font-bold">Colombia</span>, specializing in
