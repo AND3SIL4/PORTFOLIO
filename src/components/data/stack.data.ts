@@ -3,61 +3,52 @@ import type { StackFrameworkTool } from "./interfaces.ts";
 
 export const stacks: StackFrameworkTool[] = [
   {
-    name: "Node JS",
-    category: "Web Development",
-    icon: Lucide.IconNodeJS,
-    url: "https://nodejs.org/en",
+    name: "Python",
+    category: "Process Automatization",
+    icon: Lucide.IconPython,
   },
   {
-    name: "Python",
+    name: "Java Script",
     category: "Web Development",
-    icon: Lucide.IconPython,
-    url: "https://www.python.org/",
+    icon: Lucide.IconNodeJS,
   },
   {
     name: "MySQL",
-    category: "Management Data Bases",
+    category: "Database Management",
     icon: Lucide.IconMySQL,
-    url: "https://www.mysql.com/",
   },
 ];
 
 export const frameworks: StackFrameworkTool[] = [
   {
     name: "React",
-    category: "Web development",
-    icon: Lucide.IconAI,
-    url: "https://react.dev",
+    category: "Frontend development",
+    icon: Lucide.IconReact,
   },
   {
     name: "Angular",
-    category: "Web development",
-    icon: Lucide.IconAI,
-    url: "https://react.dev",
+    category: "Frontend development",
+    icon: Lucide.IconAngular,
   },
   {
     name: "Astro",
-    category: "Web development",
-    icon: Lucide.IconAI,
-    url: "https://react.dev",
+    category: "Frontend development",
+    icon: Lucide.IconAstro,
   },
   {
     name: "Express",
-    category: "Web development",
-    icon: Lucide.IconAI,
-    url: "https://react.dev",
+    category: "Backend development",
+    icon: Lucide.IconAngular, //TODO:: ICON
   },
   {
     name: "Django",
-    category: "Web development",
-    icon: Lucide.IconAI,
-    url: "https://react.dev",
+    category: "Backend development",
+    icon: Lucide.IconDjango,
   },
   {
     name: "Tailwind CSS",
-    category: "Web development",
-    icon: Lucide.IconAI,
-    url: "https://react.dev",
+    category: "CSS framework",
+    icon: Lucide.IconTailwind,
   },
 ];
 
@@ -66,36 +57,20 @@ export const tools: StackFrameworkTool[] = [
     name: "GitHub",
     category: "Version control",
     icon: Simple.IconGitHub,
-    url: "https://github.com/",
   },
   {
     name: "Docker",
-    category: "Version control",
-    icon: Simple.IconGitHub,
-    url: "https://github.com/",
+    category: "Devops solutions",
+    icon: Lucide.IconDocker,
   },
   {
     name: "Azure",
-    category: "Version control",
-    icon: Simple.IconGitHub,
-    url: "https://github.com/",
+    category: "Cloud compute/AI",
+    icon: Lucide.IconAzure,
   },
   {
-    name: "Visual Studio",
-    category: "Version control",
-    icon: Simple.IconGitHub,
-    url: "https://github.com/",
-  },
-  {
-    name: "Vim",
-    category: "Version control",
-    icon: Simple.IconGitHub,
-    url: "https://github.com/",
-  },
-  {
-    name: "Trello",
-    category: "Version control",
-    icon: Simple.IconGitHub,
-    url: "https://github.com/",
+    name: "Neovim",
+    category: "Typing/Coding efficacy",
+    icon: Lucide.IconNeovim,
   },
 ];

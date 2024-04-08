@@ -13,7 +13,7 @@ export interface StackFrameworkTool {
   name: string;
   category: string;
   icon: any;
-  url: string;
+  url?: string;
 }
 
 //Component stack interface
