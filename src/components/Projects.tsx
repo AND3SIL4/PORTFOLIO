@@ -1,6 +1,6 @@
 import { IconButton } from "./ui";
 import { cn } from "./ui/utils.ts";
-import { Simple, Lucide } from "./icons";
+import { Lucide } from "./icons";
 
 // Import all projects done and in process..
 import { projects } from "./data/projects.data.ts";
@@ -52,7 +52,7 @@ export default () => {
                   target="_blank"
                   aria-label="Open"
                 >
-                  <Simple.IconGitHub
+                  <Lucide.IconGitHub
                     aria-label="Open"
                     className="transition text-neutral-10 group-focus-visible/icon:text-primary-11"
                   />

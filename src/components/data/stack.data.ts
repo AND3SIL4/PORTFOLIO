@@ -1,4 +1,4 @@
-import { Lucide, Simple } from "./../icons";
+import { Lucide } from "./../icons";
 import type { StackFrameworkTool } from "./interfaces.ts";
 
 export const stacks: StackFrameworkTool[] = [
@@ -38,7 +38,7 @@ export const frameworks: StackFrameworkTool[] = [
   {
     name: "Express",
     category: "Backend development",
-    icon: Lucide.IconAngular, //TODO:: ICON
+    icon: Lucide.IconExpress,
   },
   {
     name: "Django",
@@ -56,7 +56,7 @@ export const tools: StackFrameworkTool[] = [
   {
     name: "GitHub",
     category: "Version control",
-    icon: Simple.IconGitHub,
+    icon: Lucide.IconGitHub,
   },
   {
     name: "Docker",
