@@ -37,7 +37,7 @@ const BaseStack: React.FC<Props> = ({ title, content }) => {
   return (
     <div className="mb-5">
       <h2 className="font-medium text-xl">{title}</h2>
-      <ul className="grid grid-cols-2 gap-3 p-1">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-3 p-1">
         {content.map((content: any) => {
           return (
             <li
@@ -54,12 +54,12 @@ const BaseStack: React.FC<Props> = ({ title, content }) => {
                 <div className="flex items-center justify-center">
                   <content.icon
                     size={24}
-                    className="transition duration-300 group-hover:-translate-y-1 text-neutral-10 group-hover:text-neutral-11"
+                    className="transition duration-300 group-hover:-translate-y-1 text-neutral-10 group-hover:text-secondary-11"
                   />
                 </div>
 
                 <div>
-                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">
+                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm group-hover:text-secondary-11">
                     {content.name}
                   </h3>
                   <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-xs">

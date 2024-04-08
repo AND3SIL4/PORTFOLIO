@@ -13,7 +13,7 @@ export const IconButton = klassed(
         ],
       },
       size: {
-        md: "w-8 h-8 text-base font-medium rounded-xl",
+        md: "w-32 h-9 text-base font-medium rounded-xl",
       },
     },
     defaults: {

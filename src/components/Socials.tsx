@@ -1,16 +1,31 @@
 import { cn } from "./ui/utils.ts";
-import { Simple } from "./icons";
+import { Lucide } from "./icons";
 
 const socials = [
   {
-    href: "https://github.com",
+    href: "https://www.linkedin.com/in/and3sil4/",
+    name: "LinkedIn",
+    icon: Lucide.IconLinkedIn,
+  },
+  {
+    href: "mailto:and3felipe@gmail.com",
+    name: "Email",
+    icon: Lucide.IconMail,
+  },
+  {
+    href: "https://github.com/AND3SIL4",
     name: "GitHub",
-    icon: Simple.IconGitHub,
+    icon: Lucide.IconGitHub,
   },
   {
     href: "https://x.com/AFelipe_Silva3",
     name: "X",
-    icon: Simple.IconX,
+    icon: Lucide.IconX,
+  },
+  {
+    href: "https://medium.com/@and3felipe",
+    name: "Medium",
+    icon: Lucide.IconMedium,
   },
 ];
 
@@ -34,7 +49,7 @@ export default () => {
                 target="_blank"
                 aria-label="Open"
               >
-                <social.icon className="transition size-1/3 text-neutral-10 group-hover:text-neutral-11 group-hover:scale-110 group-focus-visible:text-neutral-11 group-focus-visible:scale-110" />
+                <social.icon className="transition size-1/2 text-neutral-10 group-hover:text-primary-11 group-hover:scale-110 group-focus-visible:text-neutral-11 group-focus-visible:scale-110" />
               </a>
             </li>
           );
