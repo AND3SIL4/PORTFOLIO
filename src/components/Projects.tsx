@@ -54,7 +54,7 @@ export default () => {
                 >
                   <Lucide.IconGitHub
                     aria-label="Open"
-                    className="transition text-neutral-10 group-focus-visible/icon:text-primary-11"
+                    className="transition text-neutral-10 group-focus-visible/icon:text-primary-11 group-hover:text-secondary-11"
                   />
                 </IconButton>
                 {project.isDone && project.site ? (
