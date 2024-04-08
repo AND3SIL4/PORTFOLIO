@@ -35,8 +35,8 @@ export default () => {
 
 const BaseStack: React.FC<Props> = ({ title, content }) => {
   return (
-    <div>
-      <h2 className="font-medium text-xl mb-3">{title}</h2>
+    <div className="mb-5">
+      <h2 className="font-medium text-xl">{title}</h2>
       <ul className="grid grid-cols-2 gap-3 p-1">
         {content.map((content: any) => {
           return (
