@@ -15,12 +15,6 @@ export const stacks: StackFrameworkTool[] = [
     url: "https://www.python.org/",
   },
   {
-    name: "Dart",
-    category: "Mobile and Web Development",
-    icon: Lucide.IconDart,
-    url: "https://dart.dev/",
-  },
-  {
     name: "MySQL",
     category: "Management Data Bases",
     icon: Lucide.IconMySQL,
@@ -55,12 +49,6 @@ export const frameworks: StackFrameworkTool[] = [
   },
   {
     name: "Django",
-    category: "Web development",
-    icon: Lucide.IconAI,
-    url: "https://react.dev",
-  },
-  {
-    name: "Flutter",
     category: "Web development",
     icon: Lucide.IconAI,
     url: "https://react.dev",

@@ -1,7 +1,25 @@
 import { Avatar, Button } from "./ui";
-import { Lucide, Simple } from "./icons";
+import { Lucide } from "./icons";
 
 export default () => {
+  function downloadCurriculum() {
+    const fileId = "1n7y72oDkLFUvNil8wnzCM_IitBIIFgDN"; //Get the file id to download the cv
+
+    //Link to download the cv
+    const downloadUrl = `https://drive.google.com/uc?id=${fileId}`;
+
+    //Make a temporal element
+    const link = document.createElement("a");
+    link.href = downloadUrl;
+    link.download = "download curriculum vitae";
+    link.text = "Download curriculum vitae";
+    document.body.appendChild(link);
+
+    link.click(); //Simulate click to start the download
+
+    //Remove element after downloaded
+    document.body.removeChild(link);
+  }
   return (
     <div className="flex flex-col items-start gap-6 lg:gap-8 px-3 lg:px-6 py-4">
       {/* Introduction  */}
@@ -33,15 +51,18 @@ export default () => {
       </div>
 
       {/* GitHub profile */}
-      <div className="flex self-stretch justify-end gap-3">
+      <div
+        className="flex self-stretch justify-end gap-3"
+        onClick={downloadCurriculum}
+      >
         <Button
           as="a"
           href="https://github.com/AND3SIL4"
           target="_blank"
           aria-label="GitHub"
         >
-          <Simple.IconGitHub />
-          GitHub
+          <Lucide.IconDownload />
+          Download CV
         </Button>
       </div>
     </div>
