@@ -8,7 +8,7 @@ export default () => {
   return (
     <>
       <div>
-        <h2 className="font-medium text-xl mb-3">LATEST PROJECTS</h2>
+        <h2 className="font-medium text-xl mb-3">Latest Projects</h2>
 
         {projects.map((project) => {
           return (
@@ -28,7 +28,7 @@ export default () => {
                 <div className="flex flex-col gap-2 justify-between">
                   <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-lg flex flex-col">
                     {project.title}
-                    <span className="text-sm opacity-50 text-neutral-10">
+                    <span className="text-sm opacity-50 text-neutral-11/90">
                       {project.isDone ? "Done" : "Currently..."}
                     </span>
                   </h3>
