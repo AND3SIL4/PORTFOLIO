@@ -5,11 +5,12 @@ export interface Project {
   site?: string;
   github: string;
   isDone: boolean;
-  img: string
+  img: string;
 }
 
 //Stack interface
 export interface StackFrameworkTool {
+  id: number;
   name: string;
   category: string;
   icon: any;
@@ -22,3 +23,8 @@ export interface Props {
   content: StackFrameworkTool[];
 }
 
+export interface ExperienceInterface {
+  title: string;
+  description: string;
+  date: string;
+}

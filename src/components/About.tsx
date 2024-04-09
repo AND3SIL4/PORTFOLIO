@@ -21,7 +21,7 @@ export default () => {
     document.body.removeChild(link);
   }
   return (
-    <div className="flex flex-col items-start gap-6 lg:gap-8 px-3 lg:px-6 py-4">
+    <div className="flex flex-col items-start gap-6 lg:gap-8 px-3 lg:px-6 py-4 group">
       {/* Introduction  */}
       <div className="flex flex-row items-center gap-4">
         <Avatar src="https://github.com/AND3SIL4.png" alt="profile-picture">
@@ -37,7 +37,7 @@ export default () => {
       </div>
 
       {/* About  */}
-      <div className="text-lg">
+      <div className="text-lg opacity-90 group-hover:opacity-100">
         I am a{" "}
         <span className="font-bold text-primary-11">software developer</span>{" "}
         from <span className="font-bold">Colombia</span>, specializing in
