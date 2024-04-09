@@ -24,7 +24,11 @@ export default () => {
     <div className="flex flex-col items-start gap-6 lg:gap-8 px-3 lg:px-6 py-4 group">
       {/* Introduction  */}
       <div className="flex flex-row items-center gap-4">
-        <Avatar src="https://github.com/AND3SIL4.png" alt="profile-picture">
+        <Avatar
+          src="/img/profile_picture.webp"
+          alt="profile-picture"
+          title="Felipe Silva Profile Picture"
+        >
           <Lucide.IconUser className="size-2/3" />
         </Avatar>
 
@@ -55,12 +59,7 @@ export default () => {
         className="flex self-stretch justify-end gap-3"
         onClick={downloadCurriculum}
       >
-        <Button
-          as="a"
-          href="https://github.com/AND3SIL4"
-          target="_blank"
-          aria-label="GitHub"
-        >
+        <Button>
           <Lucide.IconDownload />
           Download CV
         </Button>

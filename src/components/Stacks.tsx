@@ -26,8 +26,8 @@ export default () => {
 
   return (
     <>
-      {skills.map((skill) => (
-        <BaseStack content={skill.content} title={skill.title} />
+      {skills.map((skill, index) => (
+        <BaseStack key={index} content={skill.content} title={skill.title} />
       ))}
     </>
   );
