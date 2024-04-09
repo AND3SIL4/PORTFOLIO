@@ -47,9 +47,10 @@ export default () => {
                   "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-7 focus-visible:ring-offset-neutral-1"
                 )}
                 target="_blank"
-                aria-label="Open"
+                aria-label="Social"
               >
                 <social.icon className="transition size-1/2 text-neutral-10 group-hover:text-primary-11 group-hover:scale-110 group-focus-visible:text-neutral-11 group-focus-visible:scale-110" />
+                <span className="hidden">basketball videos</span>
               </a>
             </li>
           );
