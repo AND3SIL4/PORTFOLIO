@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
               <time className="block mb-2 text-sm font-normal leading-none text-neutral-11/80">
                 {e.date}
               </time>
-              <p className="text-base font-normal text-white/70 text-pretty mt-6">
+              <p className="text-base font-normal text-pretty mt-6">
                 {e.description}
               </p>
             </div>
