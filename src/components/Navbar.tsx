@@ -55,8 +55,9 @@ const Navbar: React.FC = () => {
               </li>
             );
           })}
-
-          <ModeComponent />
+          <li className="flex ">
+            <ModeComponent />
+          </li>
         </ul>
       </nav>
     </header>
@@ -78,18 +79,22 @@ const LinkToNav: React.FC<PropsLink> = ({ title, link }) => {
 };
 
 const ModeComponent = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState("dark");
 
-  function handleClick() {
-    setDarkMode(!darkMode);
-  }
+  const toggleTheme = () => {
+    const newTheme = darkMode == "dark" ? "light" : "dark";
+    setDarkMode(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  };
+
   return (
-    <button onClick={handleClick}>
-      {darkMode ? (
+    <button onClick={toggleTheme}>
+      {darkMode == "dark" ? (
         <Lucide.IconSun className="size-[21px] active:scale-90 hover:scale-105" />
       ) : (
         <Lucide.IconMoon className="size-[21px] active:scale-90 hover:scale-105" />
       )}
+      <span className="sr-only">Change website mode</span>
     </button>
   );
 };
