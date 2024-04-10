@@ -6,7 +6,7 @@ import { projects } from "./data/projects.data.ts";
 
 export default () => {
   return (
-    <>
+    <div id="projects">
       <h2 className="font-medium text-xl mb-3">Latest Projects</h2>
       {projects.map((project, index) => {
         return (
@@ -72,6 +72,6 @@ export default () => {
           </article>
         );
       })}
-    </>
+    </div>
   );
 };

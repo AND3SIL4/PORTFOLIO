@@ -9,6 +9,7 @@ import Stacks from "~/components/Stacks.tsx";
 import Socials from "~/components/Socials.tsx";
 import DevelopedBy from "~/components/DevelopedBy.tsx";
 import Experience from "~/components/Experience.tsx";
+import Navbar from "~/components/Navbar.tsx";
 ---
 
 <MainLayout
@@ -16,9 +17,11 @@ import Experience from "~/components/Experience.tsx";
   description="Portfolio of Andres Felipe Silva, software and web developer"
 >
   <main class="container p-3 mx-auto max-w-screen-lg min-h-dvh">
+    <Navbar client:idle/>
+
     <About client:idle />
 
-    <Experience client:load />
+    <Experience client:idle />
 
     <Separator className="my-8" />
 
