@@ -65,7 +65,9 @@ export default () => {
                         Preview{" "}
                       </span>
                     </IconButton>
-                  ) : null}
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </div>

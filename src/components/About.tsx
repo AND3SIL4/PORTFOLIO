@@ -28,6 +28,7 @@ export default () => {
           src="/img/profile_picture.webp"
           alt="profile-picture"
           title="Felipe Silva Profile Picture"
+          className="text-white"
         >
           <Lucide.IconUser className="size-2/3" />
         </Avatar>

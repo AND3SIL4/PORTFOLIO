@@ -49,8 +49,8 @@ export default () => {
                 target="_blank"
                 aria-label="Social"
               >
+                <span className="sr-only">Social media site</span>
                 <social.icon className="transition size-1/2 text-neutral-10 group-hover:text-primary-11 group-hover:scale-110 group-focus-visible:text-neutral-11 group-focus-visible:scale-110" />
-                <span className="hidden">basketball videos</span>
               </a>
             </li>
           );
