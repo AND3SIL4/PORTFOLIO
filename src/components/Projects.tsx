@@ -52,7 +52,7 @@ export default () => {
                     <IconButton
                       as="a"
                       role="button"
-                      href={project.github}
+                      href={project.site}
                       className="group/icon"
                       target="_blank"
                       aria-label="Open"

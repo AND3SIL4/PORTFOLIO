@@ -28,3 +28,9 @@ export interface ExperienceInterface {
   description: string;
   date: string;
 }
+export interface Compe {
+  title: string;
+  description: string;
+  image: string
+  siteUrl: string
+}
