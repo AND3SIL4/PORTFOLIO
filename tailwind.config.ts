@@ -30,6 +30,10 @@ export default {
         sans: ["Inter"].concat(defaultTheme.fontFamily.sans),
         mono: ["Roboto Mono"].concat(defaultTheme.fontFamily.mono),
       },
+      backgroundImage: {
+        codicon: "/img/asiste_project.webp",
+        senasoft: "/img/pandemission_project.webp",
+      },
     },
   },
   plugins: [radix.plugin],

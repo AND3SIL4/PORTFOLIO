@@ -10,7 +10,7 @@ const DevelopedBy = () => {
           aria-label="Developer"
         >
           {" "}
-          Andres Felipe Silva
+          Felipe Silva
         </a>
         | credits to flamrdevs
       </span>

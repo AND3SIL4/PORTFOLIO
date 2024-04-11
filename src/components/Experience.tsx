@@ -5,7 +5,7 @@ import { Lucide } from "./icons/index.ts";
 
 const Experience: React.FC = () => {
   return (
-    <article className="my-20">
+    <article className="mt-20">
       <h2 className="font-medium text-xl mb-14">Experience</h2>
       <ol className="items-start sm:flex-row flex flex-col-reverse">
         {EXPERIENCE.map((e) => (

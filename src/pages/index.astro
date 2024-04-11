@@ -10,6 +10,7 @@ import Socials from "~/components/Socials.tsx";
 import DevelopedBy from "~/components/DevelopedBy.tsx";
 import Experience from "~/components/Experience.tsx";
 import Navbar from "~/components/Navbar.tsx";
+import Competitions from "~/components/Competitions";
 ---
 
 <MainLayout
@@ -17,11 +18,13 @@ import Navbar from "~/components/Navbar.tsx";
   description="Portfolio of Andres Felipe Silva, software and web developer"
 >
   <main class="container p-3 mx-auto max-w-screen-lg min-h-dvh">
-    <Navbar client:idle/>
+    <Navbar client:idle />
 
     <About client:idle />
 
     <Experience client:idle />
+
+    <Competitions client:idle />
 
     <Separator className="my-8" />
 
@@ -78,3 +81,4 @@ import Navbar from "~/components/Navbar.tsx";
     );
   }
 </style>
+~/components/Competitions
