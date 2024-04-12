@@ -14,8 +14,9 @@ const Competitions = () => {
             description={compe.description}
             title={compe.title}
             key={compe.title}
-            image={compe.image}
             siteUrl={compe.siteUrl}
+            date={compe.date}
+            location={compe.location}
           />
         ))}
       </div>
@@ -27,14 +28,22 @@ const CompeComponent: React.FC<compe> = ({
   title,
   description,
   siteUrl,
-  image,
+  date,
+  location,
 }) => {
   return (
-    <div
-      className={`hover:shadow-md hover:shadow-neutral-11 p-6 border border-neutral-11 rounded-lg shadow w-full flex flex-col group transition-all duration-500 bg-[url(${image})]`}
-    >
-      <h1 className="mb-2 text-lg font-semibold">{title}</h1>
-      <p className="mb-3 font-normal text-md text-pretty flex-1 text-neutral-11">
+    <div className="p-6 border border-neutral-8 w-full rounded-lg flex flex-sta flex-col group transition-all duration-500">
+      <div className="flex gap-2 items-center group-hover:translate-x-1 transition-all duration-300">
+        <Lucide.IconDev className="size-5 " />
+        <h1 className="text-xl font-semibold">{title}</h1>
+      </div>
+      <h2 className="text-neutral-9 text-sm group-hover:translate-x-1 transition-all duration-300">
+        {date}
+      </h2>
+      <h3 className="text-neutral-9 mb-3 text-sm group-hover:translate-x-1 transition-all duration-300">
+        {location}
+      </h3>
+      <p className="mb-3 font-normal text-md text-pretty flex-1 text-neutral-11 group-hover:translate-y-1 transition-all duration-100">
         {description}
       </p>
       <a

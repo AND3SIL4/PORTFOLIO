@@ -31,6 +31,7 @@ export interface ExperienceInterface {
 export interface Compe {
   title: string;
   description: string;
-  image: string
-  siteUrl: string
+  siteUrl: string;
+  date: string;
+  location: string;
 }

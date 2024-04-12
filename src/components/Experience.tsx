@@ -11,7 +11,7 @@ const Experience: React.FC = () => {
         {EXPERIENCE.map((e) => (
           <li
             key={e.title}
-            className="opacity-70 relative mb-12 border sm:border-none group hover:-translate-y-4 transition-all duration-300 hover:opacity-100 flex flex-row sm:flex-col py-5 px-5 rounded-lg gap-6 w-full sm:p-0 sm:gap-0 shadow-md sm:shadow-none shadow-neutral-11"
+            className="opacity-70 relative mb-12 border border-neutral-10 sm:border-none group hover:-translate-y-4 transition-all duration-300 hover:opacity-100 flex flex-row sm:flex-col py-5 px-5 rounded-lg gap-6 w-full sm:p-0 sm:gap-0"
           >
             <div className="flex items-center">
               <Lucide.IconBriefCase className="size-8 text-secondary-11 group-hover:font-bold" />

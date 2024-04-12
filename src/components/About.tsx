@@ -3,7 +3,7 @@ import { Lucide } from "./icons";
 
 export default () => {
   function downloadCurriculum() {
-    const fileId = "1n7y72oDkLFUvNil8wnzCM_IitBIIFgDN"; //Get the file id to download the cv
+    const fileId = "1dBJ8t-FGgMCk8s_GvbB9gh1z0IuU6GSx"; //Get the file id to download the cv
 
     //Link to download the cv
     const downloadUrl = `https://drive.google.com/uc?id=${fileId}`;
