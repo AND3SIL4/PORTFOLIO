@@ -2,8 +2,8 @@ import { Avatar, Button } from "./ui";
 import { Lucide } from "./icons";
 
 export default () => {
-  function downloadCurriculum() {
-    const fileId = "1n7y72oDkLFUvNil8wnzCM_IitBIIFgDN"; //Get the file id to download the cv
+  function downloadCurriculum(fileID: string) {
+    const fileId = fileID; //Get the file id to download the cv
 
     //Link to download the cv
     const downloadUrl = `https://drive.google.com/uc?id=${fileId}`;
@@ -55,10 +55,10 @@ export default () => {
         .
       </div>
 
-      {/* GitHub profile */}
+      {/* Curriculums */}
       <div
         className="flex self-stretch justify-end gap-3"
-        onClick={downloadCurriculum}
+        onClick={() => downloadCurriculum("1n7y72oDkLFUvNil8wnzCM_IitBIIFgDN")}
       >
         <Button>
           <Lucide.IconDownload />

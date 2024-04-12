@@ -308,3 +308,12 @@ export const IconSun = create(
     <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
   </>
 );
+
+export const IconDev = create(
+  <>
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M7 8l-4 4l4 4" />
+    <path d="M17 8l4 4l-4 4" />
+    <path d="M14 4l-4 16" />
+  </>
+);

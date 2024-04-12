@@ -4,7 +4,7 @@ const DevelopedBy = () => {
       <span>
         Developed by{" "}
         <a
-          href="https://github.com/"
+          href="https://github.com/AND3SIL4"
           className="inline-block transition duration-300 hover:-translate-y-px outline-none hover:text-primary-10 focus-visible:text-primary-10"
           target="_blank"
           aria-label="Developer"
