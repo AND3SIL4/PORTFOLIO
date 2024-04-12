@@ -58,7 +58,7 @@ export default () => {
       {/* Curriculums */}
       <div
         className="flex self-stretch justify-end gap-3"
-        onClick={() => downloadCurriculum("1n7y72oDkLFUvNil8wnzCM_IitBIIFgDN")}
+        onClick={() => downloadCurriculum("1_o_xwzzAsAU0acn-uFHvfaMFeD7hknRW")}
       >
         <Button>
           <Lucide.IconDownload />
