@@ -12,7 +12,7 @@ const DevelopedBy = () => {
           {" "}
           Felipe Silva
         </a>
-        | credits to flamrdevs
+        <span> </span>| credits to flamrdevs
       </span>
     </div>
   );

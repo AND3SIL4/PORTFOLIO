@@ -21,7 +21,7 @@ export const projects: Projects[] = [
   {
     title: "Asiste Project",
     description:
-      "This project consists of a backend built in Django and a frontend developed in Angular 16 to automate the process of the call for assistance in a specific center of SENA, its main purpose is the registration of news, absence, in order to better control. The implementation is done through Docker and Docker Compose. The project was deployed on the SENA datacenter linux machine.",
+      "This project consists of a backend built in Django and a frontend developed in Angular 16 to automate the process of the call for assistance in a specific center of SENA, its main purpose is the registration of news, absence, in order to improve the student's control. The implementation is done through Docker and Docker Compose. The project was deployed on the SENA datacenter linux machine.",
     github: "https://github.com/AND3SIL4/ASISTE-PROJECT-DOCKERIZED",
     isDone: true,
     img: "/img/asiste_project.webp",
