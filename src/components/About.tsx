@@ -59,7 +59,7 @@ export default () => {
       <div className="flex self-stretch justify-end gap-3">
         <Button
           onClick={() =>
-            downloadCurriculum("1gA645TvqALAs_YSIiB_xtqQ0Z9j0zAgM")
+            downloadCurriculum("1rzfYv1JJCBzqyXgRD3ijP0XCJFbPCAyz")
           }
         >
           <Lucide.IconDownload />
